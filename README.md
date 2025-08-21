@@ -86,8 +86,9 @@
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-bash
-🔹 2️⃣ 필수 패키지 설치
+```bash
+
+### 🔹 2️⃣ 필수 패키지 설치
 pip install -r requirements.txt
 
 🔹 3️⃣ Python 코드 실행
