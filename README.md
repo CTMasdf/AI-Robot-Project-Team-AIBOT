@@ -50,3 +50,28 @@ TFT LCD에 날씨 상태 (맑음, 구름, 비, 눈 등)를 시각적으로 보�
    ```bash
    git clone https://github.com/CTMasdf/AI-Robot-Project-Team-AIBOT.git
    cd AI-Robot-Project-Team-AIBOT
+Arduino 코드 업로드
+
+arduino_code.ino를 Arduino IDE로 열어 보드/포트 설정 후 업로드
+
+Python 환경 설정 및 실행
+
+bash
+python3 -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python Raspberrypi.py
+시연 방법
+
+로봇에게 “마린”이라고 호출 → 명령에 따라 LED, 모터, 날씨 표시, 이미지 분석 반응
+
+활용 분야
+가정용 AI 비서
+
+교육 분야에서 실습/교구용 로봇
+
+산업/서비스 현장으로 확장 가능한 인터랙티브 로봇 플랫폼
+
+프로젝트 팀
+AI-BOT Team: AI 브레인(Raspberry Pi)과 로봇 바디(Arduino) 간 통합 제어 및 상호작용 구현
+
