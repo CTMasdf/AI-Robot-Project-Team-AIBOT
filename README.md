@@ -47,10 +47,10 @@
 | 구성 | 용도 |
 |------|------|
 | Raspberry Pi 4 | AI 연산, 카메라/음성 입출력 처리 |
-| Arduino Mega | 모터, TFT LCD, LED 제어 |
+| Arduino Mega | DC모터 드라이버(L293D), TFT LCD 제어 |
 | 메카넘 휠 4개 | 자유로운 방향 이동 |
 | TFT LCD (ST7735) | 시각적 인터페이스 |
-| USB 카메라 | 이미지 촬영 및 분석 |
+| 카메라 모듈듈 | 이미지 촬영 및 분석 |
 | 스피커 & 마이크 | 음성 입출력 |
 
 ### 🔗 네트워크/통신
@@ -127,7 +127,7 @@ requests==2.31.0
 
 # 환경 변수 관리
 python-dotenv==1.0.1
-
+```
 💡 Raspberry Pi Tip
 PyAudio 설치 전 아래 패키지 설치가 필요합니다:
 ```bash
