@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Arduino](https://img.shields.io/badge/Arduino-Mega-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
