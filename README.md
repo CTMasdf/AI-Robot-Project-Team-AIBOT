@@ -1,77 +1,132 @@
-# AIBOT – 지능형 로봇 플랫폼
+🤖 AI Robot Project - Team AIBOT
+📌 프로젝트 개요
 
-## ​ GitHub 리포지토리
-- [Arduino 제어 코드](https://github.com/CTMasdf/AI-Robot-Project-Team-AIBOT/blob/main/arduino_code.ino)
-- [Raspberry Pi 챗봇 코드](https://github.com/CTMasdf/AI-Robot-Project-Team-AIBOT/blob/main/Raspberrypi.py)
-- [이 README 문서](https://github.com/CTMasdf/AI-Robot-Project-Team-AIBOT/blob/main/README.md)
+본 프로젝트는 AI와 임베디드 기술을 융합하여 인간과 자연스럽게 소통할 수 있는 지능형 로봇 플랫폼을 개발하는 것을 목표로 합니다.
+라즈베리파이와 아두이노를 기반으로 STT(음성 인식), TTS(음성 출력), 이미지 인식, Gemini API 기반 자연어 처리 기술을 활용하여 사용자의 질문과 상황에 맞게 대응할 수 있도록 설계되었습니다.
 
----
+🎥 시연 영상: YouTube 링크
 
-##  시연 영상  
-- GitHub 기반 전체 기능이 동작하는 모습을 유튜브 영상으로 확인할 수 있습니다:  
-  ▶ [시연 영상 보기](https://www.youtube.com/watch?v=zz5ADG3Mypc&t=194s)
+🛠 주요 기능
+1. 캐릭터 얼굴 표현
 
----
+TFT LCD를 통해 로봇의 눈 그림 출력
 
-##  프로젝트 개요  
-**목표**: 사용자와 자연스럽게 소통하고 상황에 대응할 수 있는 지능형 로봇 플랫폼 구현.  
-이 프로젝트는 음성 인식(STT/TTS), 이미지 인식, 그리고 Gemini API 기반 자연어 처리 기능을 통합하여, 사용자 명령에 유연히 반응하며 하드웨어를 제어하는 로봇입니다.
+감정이나 상태를 직관적으로 전달
 
----
+2. 모터 제어
 
-##  시스템 구성  
-| 구성 | 설명 |
-|------|------|
-| **Ar​duino 제어** | `arduino_code.ino` – 모터, TFT LCD 제어 및 시리얼 수신 |
-| **Raspberry Pi 챗봇** | `Raspberrypi.py` – STT/TTS, 이미지 촬영 및 Gemini API 연동 |
-| **시연 영상** | 실제 로봇 작동 모습 및 화면 입력 기능 시연 |
+메카넘 휠을 이용한 자유로운 이동
 
----
+전진 / 후진 / 좌회전 / 우회전 / 정지
 
-##  주요 기능
+3. 날씨 표현
 
-### 캐릭터 얼굴 표시  
-TFT LCD에 눈 모양 아이콘으로 상태 표현 (홈 화면)
+TFT LCD를 활용하여 다양한 날씨 표현 가능
 
-### 모터 제어 (메카넘 휠 기반)  
-- 전진 / 후진 / 좌회전 / 우회전 / 정지 – 음성 명령 또는 키워드로 제어
+맑음 ☀
 
-### 날씨 아이콘 표시  
-TFT LCD에 날씨 상태 (맑음, 구름, 비, 눈 등)를 시각적으로 보여줌
+살짝 구름 🌤
 
-### 이미지 촬영 및 분석  
-사용자의 “사진 찍어줘” 명령 시 카메라로 촬영 후 Gemini API로 분석 결과를 언어로 응답
+구름 ☁
 
----
+비 🌧
 
-##  설치 및 사용 방법
+눈 ❄
 
-1. **레포지토리 클론**  
-   ```bash
-   git clone https://github.com/CTMasdf/AI-Robot-Project-Team-AIBOT.git
-   cd AI-Robot-Project-Team-AIBOT
-Arduino 코드 업로드
+4. 카메라 & 이미지 인식
 
-arduino_code.ino를 Arduino IDE로 열어 보드/포트 설정 후 업로드
+음성 명령을 통해 사진 촬영
 
-Python 환경 설정 및 실행
+Gemini API를 활용해 촬영한 이미지 분석 및 결과 제공
 
-bash
+5. 음성 기반 대화
+
+STT : 사용자의 음성을 텍스트로 변환
+
+TTS : 분석된 응답을 다시 음성으로 출력
+
+Gemini API 기반 자연어 처리를 통해 유연한 대화 가능
+
+📂 프로젝트 구조
+🔹 Arduino Code
+
+arduino_code.ino
+
+TFT LCD 출력 제어
+
+모터 제어 (메카넘 휠)
+
+시리얼 통신 기반 데이터 송수신
+
+🔹 Raspberry Pi Code
+
+Raspberrypi.py
+
+음성 인식(STT) & 음성 출력(TTS)
+
+Gemini API 기반 대화 처리
+
+카메라 제어 및 이미지 분석
+
+⚙️ 개발 환경
+
+하드웨어
+
+Raspberry Pi 4
+
+Arduino Mega
+
+TFT LCD
+
+메카넘 휠 모터
+
+USB 카메라
+
+스피커 & 마이크
+
+소프트웨어 & 툴
+
+Arduino IDE
+
+Python (venv 가상환경)
+
+Gemini API
+
+OpenCV (이미지 처리)
+
+Pyttsx3 / SpeechRecognition (STT/TTS)
+
+통신 방식
+
+USB Serial (라즈베리파이 ↔ 아두이노)
+
+Wi-Fi (라즈베리파이 네트워크 연결)
+
+버전 관리
+
+GitHub
+
+🚀 설치 및 실행 방법
+1. Arduino
+# 아두이노 IDE에서 arduino_code.ino 업로드
+
+2. Raspberry Pi
+# 가상환경 실행
 python3 -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
+source venv/bin/activate
+
+# 패키지 설치
 pip install -r requirements.txt
-python Raspberrypi.py
-시연 방법
 
-로봇에게 “마린”이라고 호출 → 명령에 따라 LED, 모터, 날씨 표시, 이미지 분석 반응
+# 실행
+python3 Raspberrypi.py
 
-활용 분야
-가정용 AI 비서
+📌 기대 효과
 
-교육 분야에서 실습/교구용 로봇
+가정, 교육, 서비스 환경에서 활용 가능한 확장형 AI 로봇
 
-산업/서비스 현장으로 확장 가능한 인터랙티브 로봇 플랫폼
+인간과 자연스럽게 소통 가능한 지능형 인터페이스 구현
 
-프로젝트 팀
-AI-BOT Team: AI 브레인(Raspberry Pi)과 로봇 바디(Arduino) 간 통합 제어 및 상호작용 구현
+음성, 이미지, 센서 데이터를 융합한 차세대 스마트 로봇 기술 연구 기반 제공
 
+👥 팀 소개 - Team AIBOT
