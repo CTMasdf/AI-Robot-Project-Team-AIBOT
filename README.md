@@ -67,40 +67,41 @@
 
 ## 📂 프로젝트 구조
 
-AI-Robot-Project-Team-AIBOT/
-│
-├── arduino_code.ino # Arduino Mega 제어 코드 (모터, TFT LCD, LED)
-├── Raspberrypi.py # Raspberry Pi 제어 코드 (STT, TTS, 카메라, AI)
-├── README.md # 프로젝트 설명 문서
-├── requirements.txt # Python 패키지 목록
+- AI-Robot-Project-Team-AIBOT/
+- │
+- ├── arduino_code.ino # Arduino Mega 제어 코드 (모터, TFT LCD, LED)
+- ├── Raspberrypi.py # Raspberry Pi 제어 코드 (STT, TTS, 카메라, AI)
+- ├── README.md # 프로젝트 설명 문서
+- ├── requirements.txt # Python 패키지 목록
 
+
+면서 깔끔하게 보일 수 있도록 마크다운 스타일을 예쁘게 다듬어 드릴게요.
+아이콘, 구분선, 코드 블록 정리, 강조 포인트를 넣어서 깔끔하게 꾸몄습니다.
 
 ---
 
 ## 🚀 설치 및 실행 방법
 
-### 1️⃣ Raspberry Pi 가상환경 생성
+### 🔹 1️⃣ Raspberry Pi 가상환경 생성
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 
-
-### 2️⃣ 필수 패키지 설치
+🔹 2️⃣ 필수 패키지 설치
 pip install -r requirements.txt
 
-### 3️⃣ Python 코드 실행
+🔹 3️⃣ Python 코드 실행
 python3 Raspberrypi.py
 
+🔹 4️⃣ Arduino 코드 업로드
 
-### 4️⃣ Arduino 코드 업로드
+Arduino IDE 실행 후 arduino_code.ino 업로드
 
-Arduino IDE에서 arduino_code.ino 업로드
+보드 : Arduino Mega 2560 선택
 
-보드: Arduino Mega 2560 선택
+연결 : USB 케이블로 Raspberry Pi ↔ Arduino 연결
 
-USB로 Raspberry Pi와 연결
-
-requirements.txt 예시
+📦 requirements.txt 예시
 # 음성 인식
 SpeechRecognition==3.8.1
 PyAudio==0.2.13
@@ -124,19 +125,29 @@ requests==2.31.0
 python-dotenv==1.0.1
 
 
-💡 Raspberry Pi Tip:
-PyAudio 설치 전 sudo apt-get install portaudio19-dev python3-pyaudio 필요
+💡 Raspberry Pi Tip
 
-📹 시연 영상
+sudo apt-get install portaudio19-dev python3-pyaudio
 
-YouTube Demo
 
-영상에서는 로봇이 음성 명령을 인식하고 이동, 날씨 표현, 사진 촬영 및 분석을 수행하는 과정을 확인할 수 있습니다.
+PyAudio 설치 전에 위 패키지를 설치해야 정상 동작합니다.
+
+🎥 시연 영상
+
+🔗 YouTube Demo
+
+영상에서는 로봇이 음성 명령을 인식 → 이동 → 날씨 표현 → 사진 촬영 및 분석을 수행하는 과정을 확인할 수 있습니다.
 
 👥 팀 소개
 
 Team AIBOT
 
-프로젝트 기획 및 개발: CTMasdf 외 팀원
+🧑‍💻 프로젝트 기획 및 개발: CTMasdf 외 팀원
 
-임베디드 제어, AI API 연동, UI 구현 등 협업 진행
+⚙️ 임베디드 제어
+
+🤖 AI API 연동
+
+🖥️ UI 구현
+
+모든 파트를 협업하여 개발을 진행했습니다.
