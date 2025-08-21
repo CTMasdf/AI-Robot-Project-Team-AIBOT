@@ -101,6 +101,11 @@ python3 Raspberrypi.py
 - USB로 Raspberry Pi와 연결
 
 📦 requirements.txt 예시
+## 📦 Requirements
+
+`requirements.txt` 예시:
+
+```txt
 # 음성 인식
 SpeechRecognition==3.8.1
 PyAudio==0.2.13
@@ -123,20 +128,21 @@ requests==2.31.0
 # 환경 변수 관리
 python-dotenv==1.0.1
 
-
-💡 Raspberry Pi Tip:
-PyAudio 설치 전 sudo apt-get install portaudio19-dev python3-pyaudio 필요
-
+💡 Raspberry Pi Tip
+PyAudio 설치 전 아래 패키지 설치가 필요합니다:
+```bash
+sudo apt-get install portaudio19-dev python3-pyaudio
+```
 📹 시연 영상
 
-YouTube Demo
+👉 [YouTube Demo](https://www.youtube.com/watch?v=zz5ADG3Mypc&t=194s)
 
 영상에서는 로봇이 음성 명령을 인식하고 이동, 날씨 표현, 사진 촬영 및 분석을 수행하는 과정을 확인할 수 있습니다.
 
+---
+
 👥 팀 소개
 
-Team AIBOT
+**Team AIBOT**  
 
-프로젝트 기획 및 개발: CTMasdf 외 팀원
 
-임베디드 제어, AI API 연동, UI 구현 등 협업 진행
