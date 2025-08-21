@@ -38,7 +38,7 @@ try:
 except Exception as e:
     # Handle connection failure
     # 연결 실패 처리
-    print(f"❌ 아두이노 연결 실패: {e}")
+    print(f"아두이노 연결 실패: {e}")
     arduino = None # Set arduino to None if connection fails / 연결 실패 시 None으로 설정
 time.sleep(2) # Wait for the serial connection to initialize / 시리얼 연결 초기화를 위해 대기
 
