@@ -135,7 +135,7 @@ sudo apt-get install portaudio19-dev python3-pyaudio
 ```
 📹 시연 영상
 
-👉 [YouTube Demo](https://www.youtube.com/watch?v=zz5ADG3Mypc&t=194s)
+👉 [![시연 영상](https://img.youtube.com/vi/zz5ADG3Mypc/0.jpg)](https://www.youtube.com/watch?v=zz5ADG3Mypc&t=194s)
 
 영상에서는 로봇이 음성 명령을 인식하고 이동, 날씨 표현, 사진 촬영 및 분석을 수행하는 과정을 확인할 수 있습니다.
 
