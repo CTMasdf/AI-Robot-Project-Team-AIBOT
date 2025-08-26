@@ -110,14 +110,9 @@ python3 Raspberrypi.py
 SpeechRecognition==3.8.1
 PyAudio==0.2.13
 
-# TTS
+# TTS (하나만 선택)
 gTTS==2.3.1
-pyttsx3==2.90
-
-# 이미지 처리 / 카메라
-opencv-python==4.8.1.78
-numpy==1.25.2
-Pillow==10.0.1
+# pyttsx3==2.90
 
 # 시리얼 통신
 pyserial==3.6
