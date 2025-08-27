@@ -97,7 +97,6 @@ python3 Raspberrypi.py
 - 보드: Arduino Mega 2560 선택
 - USB로 Raspberry Pi와 연결
 
-📦 requirements.txt 예시
 ## 📦 Requirements
 
 `requirements.txt` 예시:
