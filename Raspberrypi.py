@@ -11,7 +11,9 @@ import google.generativeai as genai # For using the Gemini API / Gemini API 사�
 # ------------------- Environment Variables & Gemini API -------------------
 # ------------------- 환경 변수 & Gemini API -------------------
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") # Load API key from environment / 환경 변수에서 API 키 로드
+# Load API key from environment variables
+# API key should be stored in a .env file and loaded from there / 환경 변수에서 API 키 로드 /.env 파일형식으로 Key를 저장해서 불러와야 함.
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") 
 genai.configure(api_key=GEMINI_API_KEY)     # Configure Gemini with the API key / API 키로 Gemini 설정
 model = genai.GenerativeModel("gemini-1.5-flash") # Initialize the Gemini model / Gemini 모델 초기화
 
